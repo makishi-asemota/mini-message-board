@@ -1,0 +1,11 @@
+extends layout
+block content
+    head
+    body
+        form(method='POST' action='/new')
+            h2 Enter a New Message!
+            label Enter Name:
+            input(type='text' name='name' id='name')
+            label Enter Message:
+            input(type='textarea' name='input' id='input')
+            button(type='submit') Submit

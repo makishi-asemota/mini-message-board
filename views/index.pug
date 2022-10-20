@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 #{title}
+  ul 
+    each message, i in messages 
+      div( class='messageContainer' )
+        h2= message.user
+        p= message.text 
+        p= message.added
+  a(href='/new') Add New Message
